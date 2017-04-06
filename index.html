@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- Favicons-->
+        <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+        <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+        <title>Materialize</title>
+        <!-- Materialize core CSS -->
+        <link href="assets/css/materialize.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/lighttemplate.css" rel="stylesheet" type="text/css">
+    </head>
+    <body class="">
+        <div class="navbar-container white">
+            <nav class="white"> 
+                <div class="nav-wrapper"> 
+                    <a href="index.html" class="brand-logo light-blue-text">
+                        <img src="assets/img/logo.svg" class="responsive-img" alt="blahblahsauce" title="blahblahsauce" data-pg-name="svg" />
+                    </a>                     
+                    <ul id="nav-mobile" class="right hide-on-med-and-down"> 
+                        <li>
+                            <a href="#" class="black-text">Skills</a>
+                        </li>                         
+                        <li>
+                            <a href="#" class="black-text">Portfolio</a>
+                        </li>                         
+                        <li>
+                            <a href="#" class="black-text">Contact Me</a>
+                        </li>
+                        <li>
+                            <a href="#" class="black-text">Follow Me</a>
+                        </li>                         
+                    </ul>                     
+                </div>                 
+            </nav>             
+        </div>
+        <div class="slider z-depth-1"> 
+            <ul class="slides"> 
+                <li class=""> 
+                    <img src="assets/img/hero-background.png"> 
+                    <div class="caption center-align"> 
+                        <h3 class="black-text">This is our big Tagline!</h3> 
+                        <h5 class="light text-lighten-3 light-blue-text">Here's our small slogan.</h5>
+                        <a class="btn-large blue">Stuff</a> 
+                    </div>                     
+                </li>                 
+                <li> 
+                    <img src="assets/img/slider2.jpg"> 
+                    <div class="caption left-align"> 
+                        <h3>Left Aligned Caption</h3> 
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> 
+                    </div>                     
+                </li>                 
+                <li> 
+                    <img src="assets/img/slider3.jpg"> 
+                    <div class="caption right-align"> 
+                        <h3>Right Aligned Caption</h3> 
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> 
+                    </div>                     
+                </li>                 
+                <li> 
+                    <img src="assets/img/slider4.jpg"> 
+                    <div class="caption center-align"> 
+                        <h3>This is our big Tagline!</h3> 
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> 
+                    </div>                     
+                </li>                 
+            </ul>             
+        </div>
+        <div class="container skills" data-pg-name="skills">
+            <div class="row">
+                <div class="col s12 m6 l6 center-align">
+                    <img src="assets/img/adobe-photoshop-icon.png" class="responsive-img left-align left" data-pg-name="ps icon" />
+                    <h4>Photoshop</h4>
+                    <p class="left-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ecommodo consequat. Duis aute</p>
+                </div>
+                <div class="col s12 m6 l6 center-align">
+                    <img src="assets/img/3dsmax-icon.png" class="responsive-img left-align left" data-pg-name="ps icon" />
+                    <h4>3DS Max</h4>
+                    <p class="left-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ecommodo consequat. Duis aute</p>
+                </div>
+            </div>
+        </div>
+        <!-- Materialize core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/materialize.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.slider').slider();
+                $('.parallax').parallax();
+                $(".dropdown-button").dropdown();
+                $(".button-collapse").sideNav();
+                $('select').material_select();
+                $('.datepicker').pickadate({
+                    selectMonths: true, // Creates a dropdown to control month
+                    selectYears: 15 // Creates a dropdown of 15 years to control year
+                });
+                $('.modal-trigger').leanModal();
+            });
+        </script>
+    </body>
+</html>
